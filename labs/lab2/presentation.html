@@ -1,0 +1,120 @@
+<h2 id="цель-работы">Цель работы</h2>
+<p>Изучить идеологию и применение средств контроля версий. Освоить
+умения по работе с git.</p>
+<h2 id="задание">Задание</h2>
+<ol type="1">
+<li>Создать базовую конфигурацию для работы с git.</li>
+<li>Создать ключи SSH и PGP.</li>
+<li>Настроить подписи коммитов.</li>
+<li>Зарегистрироваться на GitHub.</li>
+<li>Создать локальный каталог для выполнения заданий по предмету.</li>
+</ol>
+<h2 id="теоретическое-введение">Теоретическое введение</h2>
+<p>Системы контроля версий (VCS) позволяют отслеживать изменения в
+файлах, работать над проектами совместно и возвращаться к предыдущим
+версиям. Git — распределённая система контроля версий, которая хранит
+историю изменений локально и может синхронизироваться с удалёнными
+репозиториями.</p>
+<p>Основные команды Git: - <code>git init</code> — инициализация
+репозитория - <code>git add</code> — добавление файлов в индекс -
+<code>git commit</code> — сохранение изменений - <code>git push</code> —
+отправка изменений на сервер - <code>git pull</code> — получение
+изменений с сервера</p>
+<h2 id="выполнение-лабораторной-работы">Выполнение лабораторной
+работы</h2>
+<p>На первом шаге нужно было выполнить установку Git,но как оказалось он
+у меня уже установлен.(рис. <span class="citation"
+data-cites="fig-01">@fig-01</span>)</p>
+<figure id="fig-01">
+<img src="images/01.PNG" style="width:70.0%" alt="Установка Git" />
+<figcaption aria-hidden="true">Установка Git</figcaption>
+</figure>
+<p>Произвожу базовую настройку git. (рис. <span class="citation"
+data-cites="fig-02">@fig-02</span>)</p>
+<figure id="fig-02">
+<img src="images/02.png" style="width:70.0%" alt="Настройки Git" />
+<figcaption aria-hidden="true">Настройки Git</figcaption>
+</figure>
+<p>Создаю SSH ключи (рис. <span class="citation"
+data-cites="fig-03">@fig-03</span>)</p>
+<figure id="fig-03">
+<img src="images/03.png" style="width:70.0%"
+alt="Создание SSH-ключей rsa и ed25519" />
+<figcaption aria-hidden="true">Создание SSH-ключей rsa и
+ed25519</figcaption>
+</figure>
+<p>Создаю PGP ключ(рис. <span class="citation"
+data-cites="fig-04">@fig-04</span>)</p>
+<figure id="fig-04">
+<img src="images/04.png" style="width:70.0%" alt="Создание PGP ключa" />
+<figcaption aria-hidden="true">Создание PGP ключa</figcaption>
+</figure>
+<p>После создания ключа я скопировала его и добавила в настройках GitHub
+(рис. <span class="citation" data-cites="fig-05">@fig-05</span>).</p>
+<figure id="fig-05">
+<img src="images/05.png" style="width:70.0%"
+alt="Публичный SSH-ключ для добавления на GitHub" />
+<figcaption aria-hidden="true">Публичный SSH-ключ для добавления на
+GitHub</figcaption>
+</figure>
+<p>Экспортировала PGP-ключ и добавила на GitHub(рис. <span
+class="citation" data-cites="fig-06">@fig-06</span>)</p>
+<figure id="fig-06">
+<img src="images/06.png" style="width:70.0%" alt="Экспорт PGP-ключа" />
+<figcaption aria-hidden="true">Экспорт PGP-ключа</figcaption>
+</figure>
+<p>Настраиваю автоматические подписи для коммитов. (рис. <span
+class="citation" data-cites="fig-07">@fig-07</span>)</p>
+<figure id="fig-07">
+<img src="images/07.png" style="width:70.0%"
+alt="Настройка подписи коммитов" />
+<figcaption aria-hidden="true">Настройка подписи коммитов</figcaption>
+</figure>
+<p>Авторизуюсь на github для работы через терминал. (рис. <span
+class="citation" data-cites="fig-08">@fig-08</span>)</p>
+<figure id="fig-08">
+<img src="images/08.png" style="width:70.0%" alt="Aвторизация gh" />
+<figcaption aria-hidden="true">Aвторизация gh</figcaption>
+</figure>
+<p>Cоздаю структуру каталогов(рис. <span class="citation"
+data-cites="fig-09">@fig-09</span>)</p>
+<figure id="fig-09">
+<img src="images/09.png" style="width:70.0%"
+alt="Cоздание структуры каталогов" />
+<figcaption aria-hidden="true">Cоздание структуры каталогов</figcaption>
+</figure>
+<p>Создаю репозиторий на GitHub из шаблона(рис. <span class="citation"
+data-cites="fig-10">@fig-10</span>)</p>
+<figure id="fig-10">
+<img src="images/10.png" style="width:70.0%"
+alt="Cоздание структуры каталогов" />
+<figcaption aria-hidden="true">Cоздание структуры каталогов</figcaption>
+</figure>
+<p>Клонирую репозиторий(рис. <span class="citation"
+data-cites="fig-11">@fig-11</span>)</p>
+<figure id="fig-11">
+<img src="images/11.png" style="width:70.0%"
+alt="Клонирование репозитория" />
+<figcaption aria-hidden="true">Клонирование репозитория</figcaption>
+</figure>
+<p>Настраиваю рабочую директорию (рис. <span class="citation"
+data-cites="fig-12">@fig-12</span>)</p>
+<figure id="fig-12">
+<img src="images/12.png" style="width:70.0%"
+alt="НастройКа рабочей директории" />
+<figcaption aria-hidden="true">НастройКа рабочей директории</figcaption>
+</figure>
+<p>Отправляю изменения на GitHub(рис. <span class="citation"
+data-cites="fig-13">@fig-13</span>)</p>
+<figure id="fig-13">
+<img src="images/13.png" style="width:70.0%"
+alt="Отправка изменений на GitHub" />
+<figcaption aria-hidden="true">Отправка изменений на GitHub</figcaption>
+</figure>
+<h2 id="вывод">Вывод</h2>
+<p>В ходе выполнения лабораторной работы были изучены основные принципы
+работы систем контроля версий и получены практические навыки работы с
+Git. Выполнена базовая настройка Git, созданы SSH и PGP ключи, добавлены
+в настройки GitHub, настроена подпись коммитов. Освоена работа с GitHub
+CLI, создан репозиторий из шаблона и подготовлена структура каталогов.
+Цель работы достигнута.</p>
