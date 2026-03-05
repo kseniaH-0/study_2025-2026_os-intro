@@ -1,0 +1,149 @@
+<h2 id="актуальность">Актуальность</h2>
+<ul>
+<li>Виртуализация — основа IT-инфраструктуры</li>
+<li>Fedora — популярный дистрибутив Linux</li>
+<li>Sway — современный оконный менеджер</li>
+</ul>
+<p>## Цель работы Приобретение практических навыков установки ОС на
+виртуальную машину.</p>
+<h2 id="задачи">Задачи</h2>
+<ol type="1">
+<li>Создать виртуальную машину</li>
+<li>Установить Fedora Sway</li>
+<li>Настроить систему</li>
+<li>Проанализировать dmesg</li>
+</ol>
+<h1 id="процесс-выполнения-лабораторной-работы">Процесс выполнения
+лабораторной работы</h1>
+<h2 id="создание-виртуальной-машины">Создание виртуальной машины</h2>
+<p>Была создана виртуальная машина в VirtualBox с объёмом оперативной
+памяти 2048 МБ и размером жёсткого диска 80 ГБ (рис. <span
+class="citation" data-cites="fig-01">@fig-01</span>).</p>
+<figure id="fig-01">
+<img src="01.png" style="width:70.0%"
+alt="Создание виртуальной машины" />
+<figcaption aria-hidden="true">Создание виртуальной машины</figcaption>
+</figure>
+<h2 id="установка-операционной-системы">Установка операционной
+системы</h2>
+<p>Запускаю виртуальную машину и выбираю установку системы на жёсткий
+диск. Устанавливаю язык для интерфейса и раскладки клавиатуры (рис.
+<span class="citation" data-cites="fig-02">@fig-02</span>).</p>
+<figure id="fig-02">
+<img src="02.png" style="width:70.0%" alt="интерфейс и язык" />
+<figcaption aria-hidden="true">интерфейс и язык</figcaption>
+</figure>
+<p>Устанавливаю дату и время(рис. <span class="citation"
+data-cites="fig-03">@fig-03</span>)</p>
+<figure id="fig-03">
+<img src="03.png" style="width:70.0%" alt="дата и время" />
+<figcaption aria-hidden="true">дата и время</figcaption>
+</figure>
+<p>Создаю учетную запись(рис. <span class="citation"
+data-cites="fig-04">@fig-04</span>)</p>
+<figure id="fid-04">
+<img src="04.png" style="width:70.0%" alt="создание" />
+<figcaption aria-hidden="true">создание</figcaption>
+</figure>
+<p>Завершение установки и перезагрузка(рис. <span class="citation"
+data-cites="fig-05">@fig-05</span>)</p>
+<figure id="fig-05">
+<img src="05.png" data-widfh="70%" alt="завершение" />
+<figcaption aria-hidden="true">завершение</figcaption>
+</figure>
+<h2 id="обновление-системы">Обновление системы</h2>
+<p>После установки выполнена установка средств разработки:(рис. <span
+class="citation" data-cites="fig-06">@fig-06</span>).</p>
+<figure id="fig-06">
+<img src="06.png" style="width:70.0%" alt="средства разработки" />
+<figcaption aria-hidden="true">средства разработки</figcaption>
+</figure>
+<p>Далее обновлены все пакеты:(рис. <span class="citation"
+data-cites="fig-07">@fig-07</span>).</p>
+<figure id="fig-07">
+<img src="07.png" style="width:70.0%" alt="обновление пакетов" />
+<figcaption aria-hidden="true">обновление пакетов</figcaption>
+</figure>
+<h2 id="повышение-комфорта-работы">Повышение комфорта работы</h2>
+<p>Установлены программы для удобства работы в консоли:(рис. <span
+class="citation" data-cites="fig-08">@fig-08</span>).</p>
+<figure id="fig-08">
+<img src="08.png" style="width:70.0%" alt="программы для удобства" />
+<figcaption aria-hidden="true">программы для удобства</figcaption>
+</figure>
+<h2 id="отключение-selinux">Отключение SELinux</h2>
+<p>Заменено значение SELINUX=enforcing на значение
+SELINUX=permissive(рис. <span class="citation"
+data-cites="fig-09">@fig-09</span>).</p>
+<figure id="fig-09">
+<img src="09.png" style="width:70.0%" alt="отключение SELinux" />
+<figcaption aria-hidden="true">отключение SELinux</figcaption>
+</figure>
+<p>## Настройка раскладки клавиатуры</p>
+<p>Отредактирован системный файл конфигурации клавиатуры(рис. <span
+class="citation" data-cites="fig-10">@fig-10</span>).</p>
+<figure id="fig-10">
+<img src="10.png" style="width:70.0%"
+alt="Редактирование раскадки клавиатуры" />
+<figcaption aria-hidden="true">Редактирование раскадки
+клавиатуры</figcaption>
+</figure>
+<p>## Установка ПО для документации</p>
+<p>Для подготовки отчёта были установлены необходимые программы(рис.
+<span class="citation" data-cites="fig-11">@fig-11</span>)(рис. <span
+class="citation" data-cites="fig-12">@fig-12</span>).</p>
+<figure id="fig-11">
+<img src="11.png" data-wigth="70%" alt="установка pandoc" />
+<figcaption aria-hidden="true">установка pandoc</figcaption>
+</figure>
+<figure id="fig-12">
+<img src="12.png" data-wigth="70%" alt="установка texlive" />
+<figcaption aria-hidden="true">установка texlive</figcaption>
+</figure>
+<p>## Домашнее задание</p>
+<p>Для анализа процесса загрузки системы была использована команда
+dmesg, которая выводит сообщения ядра Linux.</p>
+<p>№1.Версия ядра Linux(рис. <span class="citation"
+data-cites="fig-13">@fig-13</span>).</p>
+<figure id="fig-13">
+<img src="13.png" data-wigth="70%" alt="Версия ядра Linux" />
+<figcaption aria-hidden="true">Версия ядра Linux</figcaption>
+</figure>
+<p>№2.Частота процессора(рис. <span class="citation"
+data-cites="fig-14">@fig-14</span>).</p>
+<figure id="fig-14">
+<img src="14.png" data-wigth="70%" alt="Частота процессора" />
+<figcaption aria-hidden="true">Частота процессора</figcaption>
+</figure>
+<p>№3.Модель процессора(рис. <span class="citation"
+data-cites="fig-15">@fig-15</span>).</p>
+<figure id="fig-15">
+<img src="15.png" data-wigth="70%" alt="Модель процессора" />
+<figcaption aria-hidden="true">Модель процессора</figcaption>
+</figure>
+<p>№4.Объём доступной оперативной памяти(рис. <span class="citation"
+data-cites="fig-16">@fig-16</span>).</p>
+<figure id="fig-16">
+<img src="16.png" data-wigth="70%"
+alt="Объём доступной оперативной памяти" />
+<figcaption aria-hidden="true">Объём доступной оперативной
+памяти</figcaption>
+</figure>
+<p>№5.Тип обнаруженного гипервизора(рис. <span class="citation"
+data-cites="fig-17">@fig-17</span>).</p>
+<figure id="fig-17">
+<img src="17.png" data-wigth="70%"
+alt="Тип обнаруженного гипервизора" />
+<figcaption aria-hidden="true">Тип обнаруженного
+гипервизора</figcaption>
+</figure>
+<p>№6.Тип файловой системы корневого раздела(рис. <span class="citation"
+data-cites="fig-18">@fig-18</span>).</p>
+<p>№7.Последовательность монтирования файловых систем(рис. <span
+class="citation" data-cites="fig-18">@fig-18</span>). <img src="18.png"
+id="fig-18" data-wigth="70%"
+alt="Тип файловой системы корневого раздела" /></p>
+<h2 id="вывод">Вывод</h2>
+<p>Мы приобрели практические навыки установки операционной системы на
+виртуальную машину, настройки минимально необходимых для дальнейшей
+работы сервисов.</p>
