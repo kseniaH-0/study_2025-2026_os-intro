@@ -1,0 +1,129 @@
+<h2 id="цель-работы">Цель работы</h2>
+<p>Познакомиться с pass, gopass, native messaging, chezmoi. Научиться
+пользоваться этими утилитами, синхронизировать их с гит.</p>
+<h2 id="задание">Задание</h2>
+<ol type="1">
+<li>Установить дополнительное ПО</li>
+<li>Установить и настроить pass</li>
+<li>Настроить интерфейс с браузером</li>
+<li>Сохранить пароль</li>
+<li>Установить и настроить chezmoi</li>
+<li>Настроить chezmoi на новой машине</li>
+<li>Выполнить ежедневные операции с chezmoi</li>
+</ol>
+<h2 id="теоретическое-введение">Теоретическое введение</h2>
+<p>Менеджер паролей pass — программа, сделанная в рамках идеологии Unix.
+Также носит название стандартного менеджера паролей для Unix (The
+standard Unix password manager). 1.1 Основные свойства Данные хранятся в
+файловой системе в виде каталогов и файлов. Файлы шифруются с помощью
+GPG-ключа. 1.2 Структура базы паролей Структура базы может быть
+произвольной, если Вы собираетесь использовать её напрямую, без
+промежуточного программного обеспечения. Тогда семантику структуры базы
+данных Вы держите в своей голове. Если же необходимо использовать
+дополнительное программное обеспечение, необходимо семантику заложить в
+структуру базы паролей. chezmoi используется для управления файлами
+конфигурации домашнего каталога пользователя. Конфигурация chezmoi 2.2.1
+Рабочие файлы Состояние файлов конфигурации сохраняется в каталоге
+~/.local/share/chezmoi. Он является клоном вашего репозитория dotfiles.
+Файл конфигурации ~/.config/chezmoi/chezmoi.toml (можно использовать
+также JSON или YAML) специфичен для локальной машины. Файлы, содержимое
+которых одинаково на всех ваших машинах, дословно копируются из
+исходного каталога. Файлы, которые варьируются от машины к машине,
+выполняются как шаблоны, обычно с использованием данных из файла
+конфигурации локальной машины для настройки конечного содержимого,
+специфичного для локальной машины.</p>
+<h2 id="выполнение-лабораторной-работы">Выполнение лабораторной
+работы</h2>
+<h3 id="установка-pass-и-pass-otp">Установка pass и pass-otp</h3>
+<figure id="fig-01">
+<img src="images/01.png" style="width:70.0%" alt="Установка ПО" />
+<figcaption aria-hidden="true">Установка ПО</figcaption>
+</figure>
+<h2 id="проверка-gpg-ключа">Проверка GPG-ключа</h2>
+<figure id="fig-02">
+<img src="images/02.png" style="width:70.0%"
+alt="Проверка наличия GPG-ключа" />
+<figcaption aria-hidden="true">Проверка наличия GPG-ключа</figcaption>
+</figure>
+<h2 id="инициализация-хранилища">Инициализация хранилища</h2>
+<figure id="fig-03">
+<img src="images/03.png" style="width:70.0%"
+alt="Инициализация хранилища pass" />
+<figcaption aria-hidden="true">Инициализация хранилища pass</figcaption>
+</figure>
+<h2 id="создание-локального-git-репозитория">Создание локального
+Git-репозитория</h2>
+<figure id="fig-04">
+<img src="images/04.png" style="width:70.0%"
+alt="Инициализация Git в хранилище pass" />
+<figcaption aria-hidden="true">Инициализация Git в хранилище
+pass</figcaption>
+</figure>
+<h2 id="подключение-удалённого-репозитория">Подключение удалённого
+репозитория</h2>
+<figure id="fig-05">
+<img src="images/05.png" style="width:70.0%"
+alt="Подключение и первый push" />
+<figcaption aria-hidden="true">Подключение и первый push</figcaption>
+</figure>
+<h2 id="синхронизация-изменений-с-сервером">Синхронизация изменений с
+сервером</h2>
+<figure id="fig-06">
+<img src="images/06.png" style="width:70.0%"
+alt="Синхронизация с удалённым репозиторием" />
+<figcaption aria-hidden="true">Синхронизация с удалённым
+репозиторием</figcaption>
+</figure>
+<h2 id="интеграция-с-браузером-browserpass">Интеграция с браузером
+(browserpass)</h2>
+<h3 id="установка-native-клиента">Установка native-клиента</h3>
+<p><img src="images/07.png" id="fig-07" style="width:70.0%"
+alt="Подключение репозитория browserpass" /> <img src="images/08.png"
+id="fig-08" style="width:70.0%"
+alt="Установка пакета browserpass" /></p>
+<h2 id="управление-файлами-конфигурации-с-chezmoi">Управление файлами
+конфигурации с chezmoi</h2>
+<h3 id="установка-дополнительных-пакетов">Установка дополнительных
+пакетов</h3>
+<figure id="fig-09">
+<img src="images/09.png" style="width:70.0%"
+alt="Установка дополнительных пакетов" />
+<figcaption aria-hidden="true">Установка дополнительных
+пакетов</figcaption>
+</figure>
+<h2 id="установка-шрифтов-iosevka">Установка шрифтов Iosevka</h2>
+<figure id="fig-10">
+<img src="images/10.png" style="width:70.0%"
+alt="Установка шрифтов Iosevka" />
+<figcaption aria-hidden="true">Установка шрифтов Iosevka</figcaption>
+</figure>
+<h2 id="установка-chezmoi">Установка chezmoi</h2>
+<figure id="fig-11">
+<img src="images/11.png" style="width:70.0%" alt="Установка chezmoi" />
+<figcaption aria-hidden="true">Установка chezmoi</figcaption>
+</figure>
+<h2 id="создание-репозитория-для-dotfiles-и-инициализация">Создание
+репозитория для dotfiles и инициализация</h2>
+<figure id="fig-12">
+<img src="images/12.png" style="width:70.0%"
+alt="Создание репозитория и инициализация chezmoi" />
+<figcaption aria-hidden="true">Создание репозитория и инициализация
+chezmoi</figcaption>
+</figure>
+<h2 id="обновление-конфигурации">Обновление конфигурации</h2>
+<figure id="fig-13">
+<img src="images/13.png" style="width:70.0%"
+alt="Проверка обновлений" />
+<figcaption aria-hidden="true">Проверка обновлений</figcaption>
+</figure>
+<h2 id="настройка-автоcommit-и-autopush">Настройка автоcommit и
+autopush</h2>
+<figure id="fig-14">
+<img src="images/14.png" style="width:70.0%"
+alt="Настройка автоcommit и autopush" />
+<figcaption aria-hidden="true">Настройка автоcommit и
+autopush</figcaption>
+</figure>
+<h2 id="выводы">Выводы</h2>
+<p>Мы познакомились с pass, gopass, native messaging, chezmoi. Научились
+пользоваться этими утилитами, синхронизировали их с гит.</p>
